@@ -182,7 +182,71 @@ body {
     background-color: #5a6268;
     transform: scale(1.05);
 }
+/* --- 2.5. Sección Insights Destacados (NUEVA) --- */
+.insights-section {
+    background-color: var(--color-texto); /* Fondo oscuro para contraste */
+    color: var(--color-blanco);
+    padding: 3rem 5%;
+    margin-top: -2rem; /* Lo pega a la sección del problema para un look continuo */
+    border-radius: 0 0 12px 12px; /* Redondea solo la parte inferior */
+}
 
+.insight-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.insight-title {
+    font-family: var(--font-titulo);
+    font-size: 2.0rem;
+    color: var(--color-rosa-fuerte);
+    margin-bottom: 2rem;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.insight-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.insight-card {
+    background-color: #444; /* Gris oscuro para las tarjetas */
+    padding: 2rem 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    border: 2px solid var(--color-rosa-fuerte); /* Borde rosa para destacar */
+}
+
+.insight-icon {
+    font-size: 2.5rem;
+    color: var(--color-rosa-fuerte);
+    margin-bottom: 0.5rem;
+}
+
+.insight-data {
+    font-family: var(--font-titulo);
+    font-size: 3rem;
+    color: var(--color-blanco);
+    line-height: 1;
+    margin-bottom: 0.5rem;
+}
+
+.insight-text {
+    font-size: 0.95rem;
+    color: #ccc;
+    font-weight: 300;
+}
+
+.insight-conclusion {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--color-rosa);
+    text-align: center;
+    margin-top: 2rem;
+}
 /* --- 3. Sección Solución --- */
 .solucion-grid {
     display: grid;
@@ -393,3 +457,4 @@ body {
         max-width: 80px;
     }
 }
+
