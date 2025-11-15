@@ -328,6 +328,15 @@ body {
     padding: 2rem;
     border-radius: 8px;
     transition: transform 0.3s ease;
+    /* CORRECCIÓN DE ALINEACIÓN */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.feature-card p {
+    color: #ccc; /* Añadido para mejor contraste en fondo oscuro */
 }
 
 .feature-card:hover {
@@ -434,11 +443,16 @@ body {
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
     .header {
         flex-direction: column;
         gap: 0.5rem;
+    
+.insight-grid {
+        grid-template-columns: 1fr; /* Apila las tarjetas de insights en móvil */
     }
+    
+    /* ... Tus otras reglas ... */
     
     .nav ul {
         gap: 1rem;
@@ -457,4 +471,6 @@ body {
         max-width: 80px;
     }
 }
+}
+
 
